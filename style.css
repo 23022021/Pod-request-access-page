@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Chivo', sans-serif;
+    font-weight:400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:-50px;
+    background-color: #121725;
+}
+.logo{
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 120px ;
+    z-index: 1;
+}
+.mobile{
+    display: block;
+    position: absolute;
+    height: 670px;
+    z-index: -1;
+   
+}
+.tablet{
+    display: none;
+}
+.dekstop{
+    display: none;
+}
+.dots{
+    display: none;
+}
+
+.dark{
+    width: 377px;
+    height: 670px;
+    background-color: #121725;
+    mix-blend-mode:multiply;
+    
+}
+
+h1{
+    position: absolute;
+    margin-top:-490px;
+    margin-left: 24px;
+    font-weight: 400;
+    width: 325px;
+    height: 76px;
+    font-size: 26px;
+    line-height: 38px;
+    text-align: center;
+    color: #54E6AF;
+    text-transform: uppercase;
+}
+h2{
+    position: absolute;
+    margin-top:-450px;
+    margin-left: 24px;
+    font-weight: 400;
+    width: 327px;
+    height: 76px;
+    font-size: 26px;
+    line-height: 38px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.description{
+    position: absolute;
+    margin-top:-405px;
+    margin-left: 24px;
+    font-weight: 400;
+    width: 327px;
+    height: 100px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #C2CBE5;
+}
+.icons{
+    display: flex;
+    position: absolute;
+    margin-top: -275px;
+    margin-left: 30px;
+    column-gap:25px;
+}
+.spotify{
+    width: 56px;
+    height: 17px;
+}
+.apple-pod{
+    width: 45px;
+    height: 17px;
+}
+.google-pod{
+    width: 73px;
+    height: 17px;
+}
+.pocket-pod{
+    width:77px;
+    height: 15px;
+}
+#email-input{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 24px;
+    width: 327px;
+    height: 46px;
+    border-radius: 28px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 28px;
+    background-color: #2C344B;
+    border: none;
+    padding-left: 32px;
+}
+#submit-email{
+    position: absolute;
+    margin-top: -127px;
+    margin-left: 24px;
+    width: 327px;
+    height: 46px;
+    border-radius: 28px;
+    color: #121725;
+    font-size: 14px;
+    line-height: 28px;
+    background-color: #54E6AF;
+    border: none;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+}
+#submit-email :hover{
+    background-color: #B3FFE2;
+    cursor: pointer;
+}
+
+        /*  js assist  */
+
+.email-div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+#error-div{
+    width: 250px;
+    height: 15px;
+    background-color: inherit;
+    z-index: 3;
+    margin-top: -148px;
+    margin-left: 56px
+
+}
+.p-error{
+    font-family: 'Chivo', sans-serif;
+    display: none;
+    color: #FB3E3E;
+    font-size: 12px;
+
+}
+.p-success{
+    font-family: 'Chivo', sans-serif;
+    display: none;
+    color: green;
+    font-size: 12px;
+
+}
+
+
+@media screen and (min-width:765px) {
+
+    body{
+        background-color: #121725;
+    }
+
+    .logo{
+        margin-top: 250px;
+        margin-left: 40px;
+    }
+    .mobile{
+        display: none;
+    } 
+    .dekstop{
+        display: none;
+    }
+    .tablet{
+        display: block;
+        width: 491px;
+        height: 767px;
+        margin-top:204px;
+        margin-left: 275px;
+    }
+    .dark{
+        position: absolute;
+        margin-top: -505px;
+        width: 635px;
+        height: -webkit-fill-available;
+        mix-blend-mode:inherit;
+    }
+    .info{
+        
+        width: 640px;
+        position: absolute;
+        margin-top: 85px;
+        margin-left: 15px;
+    }
+   
+    h1{
+        width: 635px;
+        height: 56px;
+        font-size: 45px;
+        text-align: start;
+    }
+    h2{
+        width: 635px;
+        height: 56px;
+        font-size: 45px;
+        text-align: start;
+        padding-top: 12px;
+    }
+    .description{
+        width: 445px;
+        height: 84px;
+        text-align: start;
+        padding-top: 30px;
+    }
+    .email-div{
+        margin-top: -40px;
+    }
+    #email-input{
+        width: 427px;
+        height: 56px;
+    }
+    #submit-email{
+        width: 162px;
+        height: 46px;
+        margin-top: -195.5px;
+        margin-left: 284px;  
+    }
+    #error-div{
+        margin-top: -140px;
+        margin-left: 56px;
+        
+    }
+    .icons{
+        margin-top: -130px;
+        width: 530px;
+
+    }
+    .dots{  
+        position: absolute;
+        margin-left: 40px;
+        padding-top: 155px;
+
+    }
+    .spotify{
+        width: 96px;
+        height: 30px;
+    }
+    .apple-pod{
+        width: 78px;
+        height: 30px;
+    }
+    .google-pod{
+        width: 125px;
+        height: 30px;
+    }
+    .pocket-pod{
+        width:130px;
+        height: 30px;
+    }
+
+
+}
+
+@media screen and (min-width:1440px) {
+    
+    .logo{
+        margin-left: 150px;
+        margin-top: 180px;
+    }
+    .mobile{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .dekstop{
+        display: block;
+        margin-left: 480px;
+        margin-top: 200px;
+        width: 960px;
+        
+    }
+    .dark{
+        margin-left: 125px;
+        width: 725px;
+    }
+    .info{
+        margin-left: 125px;
+    }
+    h1{
+        font-size: 50px;
+        line-height: 62px;
+    }
+    h2{
+        font-size: 50px;
+        line-height: 62px;
+        padding-top: 25px;
+    }
+    .description{
+        font-size: 18px;
+        line-height: 26px;
+        padding-top: 40px;
+    }
+    .dots{
+        display: block;
+        margin-left: 1280px;
+        margin-top: -205px;
+    }
+    #submit-email:hover{
+        cursor: pointer;
+        background-color: #B3FFE2;
+    }
+   
+    
+
+
+
+
+}
